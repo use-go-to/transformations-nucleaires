@@ -27,9 +27,7 @@
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--bg);
   color: var(--text);
@@ -37,8 +35,6 @@ body {
   line-height: 1.7;
   font-size: 1rem;
 }
-
-/* GRID BG */
 body::before {
   content: '';
   position: fixed;
@@ -50,7 +46,6 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
 .wrapper {
   position: relative;
   z-index: 1;
@@ -58,15 +53,12 @@ body::before {
   margin: 0 auto;
   padding: 0 28px 80px;
 }
-
-/* ===== HERO ===== */
 .hero {
   text-align: center;
   padding: 64px 0 48px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 56px;
 }
-
 .hero-tag {
   display: inline-block;
   font-family: 'IBM Plex Mono', monospace;
@@ -80,7 +72,6 @@ body::before {
   border-radius: 100px;
   margin-bottom: 24px;
 }
-
 h1 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
@@ -93,7 +84,6 @@ h1 {
   color: transparent;
   margin-bottom: 20px;
 }
-
 .hero-sub {
   font-family: 'IBM Plex Serif', serif;
   font-style: italic;
@@ -102,7 +92,6 @@ h1 {
   max-width: 600px;
   margin: 0 auto 32px;
 }
-
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
@@ -112,16 +101,8 @@ h1 {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
-
-.hero-meta span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
 .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); display: inline-block; }
-
-/* ===== NAV ===== */
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -134,7 +115,6 @@ h1 {
   padding-left: 28px;
   padding-right: 28px;
 }
-
 .nav-inner {
   max-width: 1140px;
   margin: 0 auto;
@@ -143,7 +123,6 @@ h1 {
   gap: 8px;
   align-items: center;
 }
-
 .nav-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.65rem;
@@ -152,7 +131,6 @@ h1 {
   text-transform: uppercase;
   margin-right: 8px;
 }
-
 .nav-pill {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.72rem;
@@ -164,18 +142,8 @@ h1 {
   transition: all 0.15s;
   white-space: nowrap;
 }
-
-.nav-pill:hover {
-  border-color: var(--cyan);
-  color: var(--cyan);
-  background: rgba(0,212,200,0.06);
-}
-
-/* ===== CHAPTER BLOCKS ===== */
-.chapter {
-  margin-bottom: 64px;
-}
-
+.nav-pill:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,200,0.06); }
+.chapter { margin-bottom: 64px; }
 .chapter-header {
   display: flex;
   align-items: baseline;
@@ -184,7 +152,6 @@ h1 {
   padding-bottom: 16px;
   border-bottom: 2px solid var(--border);
 }
-
 .chapter-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
@@ -197,7 +164,6 @@ h1 {
   border-radius: 6px;
   white-space: nowrap;
 }
-
 h2 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
@@ -205,7 +171,6 @@ h2 {
   letter-spacing: -0.02em;
   color: var(--text);
 }
-
 h3 {
   font-family: 'Syne', sans-serif;
   font-size: 1.15rem;
@@ -213,14 +178,7 @@ h3 {
   color: var(--text);
   margin: 28px 0 14px;
 }
-
-h3::before {
-  content: '›';
-  color: var(--cyan);
-  margin-right: 8px;
-  font-size: 1.2em;
-}
-
+h3::before { content: '›'; color: var(--cyan); margin-right: 8px; font-size: 1.2em; }
 h4 {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.85rem;
@@ -229,11 +187,8 @@ h4 {
   text-transform: uppercase;
   margin: 20px 0 8px;
 }
-
 p { margin-bottom: 14px; color: var(--text); }
 p:last-child { margin-bottom: 0; }
-
-/* ===== CARDS ===== */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -241,7 +196,6 @@ p:last-child { margin-bottom: 0; }
   padding: 24px 28px;
   margin-bottom: 20px;
 }
-
 .card-cyan { border-left: 3px solid var(--cyan); }
 .card-gold { border-left: 3px solid var(--gold); }
 .card-green { border-left: 3px solid var(--green); }
@@ -249,8 +203,6 @@ p:last-child { margin-bottom: 0; }
 .card-purple { border-left: 3px solid var(--purple); }
 .card-blue { border-left: 3px solid var(--blue); }
 .card-orange { border-left: 3px solid var(--orange); }
-
-/* ===== FORMULA BOX ===== */
 .formula-box {
   background: var(--surface2);
   border: 1px solid var(--border-light);
@@ -263,7 +215,6 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   overflow: hidden;
 }
-
 .formula-box::before {
   content: '';
   position: absolute;
@@ -271,7 +222,6 @@ p:last-child { margin-bottom: 0; }
   width: 3px; height: 100%;
   background: linear-gradient(to bottom, var(--cyan), var(--blue));
 }
-
 .formula-title {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.65rem;
@@ -281,7 +231,6 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 12px;
   padding-left: 6px;
 }
-
 .formula-main {
   font-size: 1.15rem;
   color: var(--text);
@@ -294,8 +243,6 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
   border: 1px solid var(--border-light);
 }
-
-/* ===== ALERT BOX ===== */
 .alert {
   border-radius: 12px;
   padding: 16px 20px;
@@ -305,23 +252,18 @@ p:last-child { margin-bottom: 0; }
   gap: 12px;
   align-items: flex-start;
 }
-
 .alert-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
 .alert-content { flex: 1; }
-
 .alert-warning { background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); }
 .alert-danger { background: rgba(255,77,109,0.1); border: 1px solid rgba(255,77,109,0.3); }
 .alert-tip { background: rgba(0,212,200,0.08); border: 1px solid rgba(0,212,200,0.25); }
 .alert-key { background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.3); }
-
-/* ===== DECAY TYPES GRID ===== */
 .decay-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
   margin: 20px 0;
 }
-
 .decay-card {
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -329,19 +271,8 @@ p:last-child { margin-bottom: 0; }
   padding: 20px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
-.decay-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-}
-
-.decay-symbol {
-  font-family: 'Syne', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
-
+.decay-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.decay-symbol { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
 .decay-equation {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.8rem;
@@ -352,8 +283,6 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-dim);
   line-height: 1.6;
 }
-
-/* ===== EXERCISE BLOCKS ===== */
 .exercise {
   background: var(--surface);
   border: 1px solid var(--border-light);
@@ -361,7 +290,6 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 32px;
   overflow: hidden;
 }
-
 .exo-header {
   background: var(--surface2);
   padding: 18px 28px;
@@ -370,7 +298,6 @@ p:last-child { margin-bottom: 0; }
   gap: 16px;
   border-bottom: 1px solid var(--border);
 }
-
 .exo-badge {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.65rem;
@@ -380,19 +307,11 @@ p:last-child { margin-bottom: 0; }
   padding: 4px 12px;
   border-radius: 100px;
 }
-
 .badge-bac { background: rgba(255,77,109,0.15); color: var(--red); border: 1px solid rgba(255,77,109,0.35); }
 .badge-entrainement { background: rgba(16,217,138,0.12); color: var(--green); border: 1px solid rgba(16,217,138,0.3); }
 .badge-difficile { background: rgba(245,158,11,0.12); color: var(--gold); border: 1px solid rgba(245,158,11,0.3); }
-
-.exo-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
+.exo-title { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; }
 .exo-body { padding: 24px 28px; }
-
 .question-block {
   background: var(--surface2);
   border-radius: 10px;
@@ -400,7 +319,6 @@ p:last-child { margin-bottom: 0; }
   margin: 12px 0;
   border-left: 3px solid var(--blue);
 }
-
 .question-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
@@ -409,8 +327,6 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 1px;
   margin-bottom: 6px;
 }
-
-/* SOLUTION TOGGLE */
 .solution-toggle {
   background: none;
   border: 1px solid var(--border-light);
@@ -424,13 +340,7 @@ p:last-child { margin-bottom: 0; }
   transition: all 0.15s;
   letter-spacing: 1px;
 }
-
-.solution-toggle:hover {
-  border-color: var(--cyan);
-  color: var(--cyan);
-  background: rgba(0,212,200,0.05);
-}
-
+.solution-toggle:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,200,0.05); }
 .solution-block {
   display: none;
   background: rgba(0,212,200,0.04);
@@ -439,16 +349,8 @@ p:last-child { margin-bottom: 0; }
   padding: 20px 24px;
   margin-top: 16px;
 }
-
 .solution-block.open { display: block; }
-
-.solution-step {
-  display: flex;
-  gap: 14px;
-  margin: 10px 0;
-  align-items: flex-start;
-}
-
+.solution-step { display: flex; gap: 14px; margin: 10px 0; align-items: flex-start; }
 .step-num {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
@@ -464,18 +366,9 @@ p:last-child { margin-bottom: 0; }
   font-weight: 600;
   margin-top: 2px;
 }
-
 .step-content { flex: 1; font-size: 0.93rem; }
 .step-content .formula-main { text-align: left; font-size: 0.9rem; padding: 8px 12px; }
-
-/* ===== TABLE ===== */
-.data-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88rem;
-  margin: 16px 0;
-}
-
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 16px 0; }
 .data-table th {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.65rem;
@@ -487,25 +380,9 @@ p:last-child { margin-bottom: 0; }
   text-align: left;
   border: 1px solid var(--border);
 }
-
-.data-table td {
-  padding: 10px 14px;
-  border: 1px solid var(--border);
-  vertical-align: top;
-  background: var(--surface);
-}
-
+.data-table td { padding: 10px 14px; border: 1px solid var(--border); vertical-align: top; background: var(--surface); }
 .data-table tr:hover td { background: var(--surface2); }
-
-/* ===== ISOTOPE VISUAL ===== */
-.nucleus-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin: 20px 0;
-  justify-content: center;
-}
-
+.nucleus-row { display: flex; flex-wrap: wrap; gap: 24px; margin: 20px 0; justify-content: center; }
 .nucleus-card {
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -515,32 +392,10 @@ p:last-child { margin-bottom: 0; }
   min-width: 130px;
   transition: transform 0.2s;
 }
-
 .nucleus-card:hover { transform: scale(1.04); }
-
-.nucleus-symbol {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin: 8px 0 4px;
-}
-
-.nucleus-name {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.nucleus-notation {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  margin-top: 8px;
-}
-
-/* ===== SUMMARY BOX ===== */
+.nucleus-symbol { font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 800; margin: 8px 0 4px; }
+.nucleus-name { font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; }
+.nucleus-notation { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--text-dim); margin-top: 8px; }
 .bilan-box {
   background: linear-gradient(135deg, rgba(0,212,200,0.06), rgba(59,130,246,0.04));
   border: 1px solid rgba(0,212,200,0.3);
@@ -548,114 +403,32 @@ p:last-child { margin-bottom: 0; }
   padding: 28px 32px;
   margin: 32px 0;
 }
-
-.bilan-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--cyan);
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.bilan-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 14px;
-  margin-top: 14px;
-}
-
-.bilan-item {
-  background: var(--surface2);
-  border-radius: 10px;
-  padding: 14px 16px;
-  font-size: 0.88rem;
-  border: 1px solid var(--border);
-}
-
-.bilan-item strong {
-  display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem;
-  color: var(--gold);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-/* ===== GRAPH SVG ===== */
-.graph-container {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 20px;
-  margin: 20px 0;
-  overflow-x: auto;
-}
-
-/* ===== CHAIN DECAY ===== */
-.chain {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0;
-  margin: 20px 0;
-  overflow-x: auto;
-  padding-bottom: 8px;
-}
-
-.chain-atom {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px 16px;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.82rem;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
+.bilan-title { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--cyan); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+.bilan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.bilan-item { background: var(--surface2); border-radius: 10px; padding: 14px 16px; font-size: 0.88rem; border: 1px solid var(--border); }
+.bilan-item strong { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
+.graph-container { background: var(--surface2); border: 1px solid var(--border); border-radius: 14px; padding: 20px; margin: 20px 0; overflow-x: auto; }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 0; margin: 20px 0; overflow-x: auto; padding-bottom: 8px; }
+.chain-atom { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; white-space: nowrap; flex-shrink: 0; }
 .chain-atom .cname { font-size: 0.65rem; color: var(--text-muted); margin-bottom: 2px; }
 .chain-atom .csym { font-size: 1rem; font-weight: 600; color: var(--text); }
-
-.chain-arrow {
-  padding: 0 6px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.chain-arrow .atype {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  display: block;
-  margin-bottom: 2px;
-}
-
+.chain-arrow { padding: 0 6px; text-align: center; flex-shrink: 0; }
+.chain-arrow .atype { font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; display: block; margin-bottom: 2px; }
 .chain-arrow .arr { font-size: 1.2rem; }
+.section-divider { height: 1px; background: linear-gradient(to right, transparent, var(--border-light), transparent); margin: 56px 0; }
+footer { border-top: 1px solid var(--border); padding: 32px 0 20px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-muted); letter-spacing: 1px; margin-top: 40px; }
 
-/* ===== DIVIDER ===== */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--border-light), transparent);
-  margin: 56px 0;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 32px 0 20px;
-  text-align: center;
+/* ===== CORRECTION HIGHLIGHT ===== */
+.correction-highlight {
+  background: rgba(0,212,200,0.12);
+  border: 1px solid rgba(0,212,200,0.4);
+  border-radius: 6px;
+  padding: 2px 7px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 1px;
-  margin-top: 40px;
+  font-size: 0.88em;
+  color: var(--cyan);
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 700px) {
   .wrapper { padding: 0 16px 60px; }
   .sticky-nav { margin: 0 -16px 40px; padding-left: 16px; padding-right: 16px; }
@@ -663,8 +436,6 @@ footer {
   .bilan-box { padding: 20px; }
   .chapter-header { flex-direction: column; gap: 8px; }
 }
-
-/* ANIMATIONS */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .chapter { animation: fadeIn 0.5s ease both; }
 </style>
@@ -672,7 +443,6 @@ footer {
 <body>
 <div class="wrapper">
 
-<!-- HERO -->
 <header class="hero">
   <div class="hero-tag">Terminale Générale · Physique-Chimie Spécialité · 2025/2026</div>
   <h1>Transformations Nucléaires</h1>
@@ -685,7 +455,6 @@ footer {
   </div>
 </header>
 
-<!-- NAVIGATION STICKY -->
 <nav class="sticky-nav">
   <div class="nav-inner">
     <span class="nav-label">Aller à</span>
@@ -699,9 +468,7 @@ footer {
   </div>
 </nav>
 
-<!-- =========================================================
-     CHAPITRE 1 – ISOTOPES
-     ========================================================= -->
+<!-- CHAPITRE 1 -->
 <section id="isotopes" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 01</span>
@@ -732,7 +499,6 @@ footer {
   <p>Deux (ou plusieurs) noyaux sont <strong>isotopes</strong> d'un même élément s'ils ont le <strong>même nombre de protons Z</strong> mais des <strong>nombres de masse A différents</strong>, donc des nombres de neutrons N différents.</p>
   <p>Ils ont les <strong>mêmes propriétés chimiques</strong> (même cortège électronique) mais des <strong>propriétés nucléaires différentes</strong> (stabilité, radioactivité).</p>
 
-  <!-- Noyaux hydrogène -->
   <div class="nucleus-row">
     <div class="nucleus-card">
       <div class="nucleus-notation"><sup>1</sup><sub>1</sub>H</div>
@@ -789,14 +555,11 @@ footer {
       <strong>Abondance isotopique :</strong> Dans la nature, les éléments existent comme un mélange d'isotopes. Par exemple, le carbone est constitué à ≈ 98,9 % de <sup>12</sup>C et ≈ 1,1 % de <sup>13</sup>C, avec des traces de <sup>14</sup>C radioactif. La masse molaire atomique est une moyenne pondérée.
     </div>
   </div>
-
 </section>
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     CHAPITRE 2 – RÉACTIONS NUCLÉAIRES
-     ========================================================= -->
+<!-- CHAPITRE 2 -->
 <section id="reactions" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 02</span>
@@ -847,43 +610,20 @@ footer {
   <h3>Différences avec les réactions chimiques</h3>
   <table class="data-table">
     <thead>
-      <tr>
-        <th>Critère</th>
-        <th>Réaction chimique</th>
-        <th>Réaction nucléaire</th>
-      </tr>
+      <tr><th>Critère</th><th>Réaction chimique</th><th>Réaction nucléaire</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><strong>Particules impliquées</strong></td>
-        <td>Électrons (liaisons)</td>
-        <td>Nucléons (protons, neutrons)</td>
-      </tr>
-      <tr>
-        <td><strong>Énergie</strong></td>
-        <td>Quelques eV par réaction</td>
-        <td>Millions d'eV (MeV) par réaction</td>
-      </tr>
-      <tr>
-        <td><strong>Éléments</strong></td>
-        <td>Conservés (même Z)</td>
-        <td>Transformés (Z peut changer)</td>
-      </tr>
-      <tr>
-        <td><strong>Influence T, P</strong></td>
-        <td>Oui (cinétique)</td>
-        <td>Non (spontanée et aléatoire)</td>
-      </tr>
+      <tr><td><strong>Particules impliquées</strong></td><td>Électrons (liaisons)</td><td>Nucléons (protons, neutrons)</td></tr>
+      <tr><td><strong>Énergie</strong></td><td>Quelques eV par réaction</td><td>Millions d'eV (MeV) par réaction</td></tr>
+      <tr><td><strong>Éléments</strong></td><td>Conservés (même Z)</td><td>Transformés (Z peut changer)</td></tr>
+      <tr><td><strong>Influence T, P</strong></td><td>Oui (cinétique)</td><td>Non (spontanée et aléatoire)</td></tr>
     </tbody>
   </table>
-
 </section>
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     CHAPITRE 3 – RADIOACTIVITÉ (4 TYPES)
-     ========================================================= -->
+<!-- CHAPITRE 3 -->
 <section id="radioactivite" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 03</span>
@@ -893,14 +633,10 @@ footer {
   <p>Certains isotopes sont instables et se désintègrent <strong>spontanément</strong> en émettant un rayonnement. On distingue quatre types de radioactivité :</p>
 
   <div class="decay-grid">
-
-    <!-- ALPHA -->
     <div class="decay-card" style="border-top: 3px solid var(--red);">
       <div class="decay-symbol" style="color:var(--red);">α</div>
       <strong style="font-family:'Syne',sans-serif;">Radioactivité alpha</strong>
-      <div class="decay-equation">
-        ᴬ꜀X → ᴬ⁻⁴꜀₋₂Y + ⁴₂He
-      </div>
+      <div class="decay-equation">ᴬ꜀X → ᴬ⁻⁴꜀₋₂Y + ⁴₂He</div>
       <ul style="font-size:0.85rem; color:var(--text-dim); padding-left:1.2em; line-height:1.9;">
         <li>Émission d'un noyau d'hélium ⁴₂He (= particule α)</li>
         <li>A diminue de 4, Z diminue de 2</li>
@@ -910,14 +646,10 @@ footer {
         <li><em>Ex : ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He</em></li>
       </ul>
     </div>
-
-    <!-- BETA MOINS -->
     <div class="decay-card" style="border-top: 3px solid var(--blue);">
       <div class="decay-symbol" style="color:var(--blue);">β⁻</div>
       <strong style="font-family:'Syne',sans-serif;">Radioactivité bêta moins</strong>
-      <div class="decay-equation">
-        ᴬ꜀X → ᴬ꜀₊₁Y + ⁰₋₁e⁻ + ν̄ₑ
-      </div>
+      <div class="decay-equation">ᴬ꜀X → ᴬ꜀₊₁Y + ⁰₋₁e⁻ + ν̄ₑ</div>
       <ul style="font-size:0.85rem; color:var(--text-dim); padding-left:1.2em; line-height:1.9;">
         <li>Émission d'un <strong>électron</strong> e⁻</li>
         <li>A conservé, Z augmente de 1</li>
@@ -927,14 +659,10 @@ footer {
         <li><em>Ex : ¹⁴₆C → ¹⁴₇N + ⁰₋₁e⁻</em></li>
       </ul>
     </div>
-
-    <!-- BETA PLUS -->
     <div class="decay-card" style="border-top: 3px solid var(--green);">
       <div class="decay-symbol" style="color:var(--green);">β⁺</div>
       <strong style="font-family:'Syne',sans-serif;">Radioactivité bêta plus</strong>
-      <div class="decay-equation">
-        ᴬ꜀X → ᴬ꜀₋₁Y + ⁰₊₁e⁺ + νₑ
-      </div>
+      <div class="decay-equation">ᴬ꜀X → ᴬ꜀₋₁Y + ⁰₊₁e⁺ + νₑ</div>
       <ul style="font-size:0.85rem; color:var(--text-dim); padding-left:1.2em; line-height:1.9;">
         <li>Émission d'un <strong>positon</strong> (antiélectron) e⁺</li>
         <li>A conservé, Z diminue de 1</li>
@@ -944,14 +672,10 @@ footer {
         <li><em>Ex : ²²₁₁Na → ²²₁₀Ne + ⁰₊₁e⁺</em></li>
       </ul>
     </div>
-
-    <!-- GAMMA -->
     <div class="decay-card" style="border-top: 3px solid var(--purple);">
       <div class="decay-symbol" style="color:var(--purple);">γ</div>
       <strong style="font-family:'Syne',sans-serif;">Radioactivité gamma</strong>
-      <div class="decay-equation">
-        ᴬ꜀X* → ᴬ꜀X + γ
-      </div>
+      <div class="decay-equation">ᴬ꜀X* → ᴬ꜀X + γ</div>
       <ul style="font-size:0.85rem; color:var(--text-dim); padding-left:1.2em; line-height:1.9;">
         <li>Émission d'un <strong>photon γ</strong> (rayonnement électromagnétique)</li>
         <li>A et Z sont <strong>inchangés</strong> (désexcitation énergétique)</li>
@@ -961,54 +685,18 @@ footer {
         <li>Pas de transmutation chimique</li>
       </ul>
     </div>
-
   </div>
 
   <h3>Tableau récapitulatif des 4 radioactivités</h3>
   <table class="data-table">
     <thead>
-      <tr>
-        <th>Type</th>
-        <th>Particule émise</th>
-        <th>ΔA</th>
-        <th>ΔZ</th>
-        <th>Cause</th>
-        <th>Pénétration</th>
-      </tr>
+      <tr><th>Type</th><th>Particule émise</th><th>ΔA</th><th>ΔZ</th><th>Cause</th><th>Pénétration</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td style="color:var(--red);font-weight:700;">α</td>
-        <td>⁴₂He (noyau d'hélium)</td>
-        <td style="color:var(--red);">−4</td>
-        <td style="color:var(--red);">−2</td>
-        <td>Noyau lourd</td>
-        <td>Faible (papier)</td>
-      </tr>
-      <tr>
-        <td style="color:var(--blue);font-weight:700;">β⁻</td>
-        <td>e⁻ (électron)</td>
-        <td>0</td>
-        <td style="color:var(--green);">+1</td>
-        <td>Excès neutrons</td>
-        <td>Moyen (alu)</td>
-      </tr>
-      <tr>
-        <td style="color:var(--green);font-weight:700;">β⁺</td>
-        <td>e⁺ (positon)</td>
-        <td>0</td>
-        <td style="color:var(--red);">−1</td>
-        <td>Excès protons</td>
-        <td>Moyen (alu)</td>
-      </tr>
-      <tr>
-        <td style="color:var(--purple);font-weight:700;">γ</td>
-        <td>Photon γ (EM)</td>
-        <td>0</td>
-        <td>0</td>
-        <td>Désexcitation</td>
-        <td>Élevé (plomb)</td>
-      </tr>
+      <tr><td style="color:var(--red);font-weight:700;">α</td><td>⁴₂He (noyau d'hélium)</td><td style="color:var(--red);">−4</td><td style="color:var(--red);">−2</td><td>Noyau lourd</td><td>Faible (papier)</td></tr>
+      <tr><td style="color:var(--blue);font-weight:700;">β⁻</td><td>e⁻ (électron)</td><td>0</td><td style="color:var(--green);">+1</td><td>Excès neutrons</td><td>Moyen (alu)</td></tr>
+      <tr><td style="color:var(--green);font-weight:700;">β⁺</td><td>e⁺ (positon)</td><td>0</td><td style="color:var(--red);">−1</td><td>Excès protons</td><td>Moyen (alu)</td></tr>
+      <tr><td style="color:var(--purple);font-weight:700;">γ</td><td>Photon γ (EM)</td><td>0</td><td>0</td><td>Désexcitation</td><td>Élevé (plomb)</td></tr>
     </tbody>
   </table>
 
@@ -1024,14 +712,11 @@ footer {
       </ul>
     </div>
   </div>
-
 </section>
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     CHAPITRE 4 – DÉCROISSANCE RADIOACTIVE
-     ========================================================= -->
+<!-- CHAPITRE 4 — DÉCROISSANCE -->
 <section id="decroissance" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 04</span>
@@ -1074,13 +759,24 @@ footer {
 
   <h3>Temps de demi-vie (période radioactive) t<sub>½</sub></h3>
   <p>Le temps de demi-vie est la durée au bout de laquelle le nombre de noyaux (ou l'activité) est <strong>divisé par 2</strong>.</p>
+
+  <!-- ===== DÉMONSTRATION CORRIGÉE ===== -->
   <div class="formula-box">
-    <div class="formula-title">Démonstration</div>
-    <code style="display:block; font-size:0.85rem; color:var(--text-dim);">
-      N(t½) = N₀/2  →  N₀/2 = N₀·e<sup>−λt½</sup><br>
-      1/2 = e<sup>−λt½</sup>  →  ln(1/2) = −λt½<br>
-      −ln(2) = −λt½
-    </code>
+    <div class="formula-title">Démonstration — Établissement de t½</div>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--text-dim); line-height:2.2; margin-bottom: 6px;">
+      Par définition : N(t½) = N₀ / 2<br><br>
+      On injecte dans la loi de décroissance :<br>
+      N₀ / 2 = N₀ · e<sup>−λt½</sup>
+    </p>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--text-dim); line-height:2.2; margin-bottom: 6px;">
+      <span class="correction-highlight">N₀ ≠ 0</span>, on peut donc diviser les deux membres par N₀ :
+    </p>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--text-dim); line-height:2.2;">
+      1/2 = e<sup>−λt½</sup><br>
+      On prend le logarithme naturel (ln) des deux membres :<br>
+      ln(1/2) = −λ · t½<br>
+      −ln(2) = −λ · t½
+    </p>
     <code class="formula-main">t½ = ln(2) / λ  ≈  0,693 / λ</code>
   </div>
 
@@ -1096,31 +792,23 @@ footer {
           <path d="M0,6 L3,0 L6,6 Z" fill="#4e6180"/>
         </marker>
       </defs>
-      <!-- Axes -->
       <line x1="50" y1="220" x2="530" y2="220" stroke="#4e6180" stroke-width="1.5" marker-end="url(#arrowX)"/>
       <line x1="50" y1="220" x2="50" y2="20" stroke="#4e6180" stroke-width="1.5" marker-end="url(#arrowY)"/>
-      <!-- Étiquettes axes -->
       <text x="535" y="225" fill="#4e6180" font-size="11" font-family="IBM Plex Mono">t</text>
       <text x="30" y="18" fill="#4e6180" font-size="11" font-family="IBM Plex Mono">N(t)</text>
-      <!-- N0 -->
       <text x="18" y="42" fill="#00d4c8" font-size="10" font-family="IBM Plex Mono">N₀</text>
       <line x1="46" y1="38" x2="54" y2="38" stroke="#00d4c8" stroke-width="1" stroke-dasharray="3,3"/>
-      <!-- N0/2 -->
       <text x="10" y="100" fill="#3b82f6" font-size="10" font-family="IBM Plex Mono">N₀/2</text>
       <line x1="46" y1="96" x2="170" y2="96" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
       <line x1="170" y1="96" x2="170" y2="220" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
-      <!-- N0/4 -->
       <text x="10" y="158" fill="#a78bfa" font-size="10" font-family="IBM Plex Mono">N₀/4</text>
       <line x1="46" y1="155" x2="288" y2="155" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3"/>
       <line x1="288" y1="155" x2="288" y2="220" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3"/>
-      <!-- Labels t½, 2t½ -->
       <text x="162" y="235" fill="#3b82f6" font-size="10" font-family="IBM Plex Mono">t½</text>
       <text x="275" y="235" fill="#a78bfa" font-size="10" font-family="IBM Plex Mono">2t½</text>
       <text x="392" y="235" fill="#4e6180" font-size="10" font-family="IBM Plex Mono">3t½</text>
-      <!-- Courbe exponentielle -->
       <path d="M50,38 C80,38 90,55 110,72 C130,89 145,94 170,96 C205,101 225,120 250,130 C270,138 280,153 288,155 C310,160 340,170 380,182 C420,190 460,200 530,210"
         fill="none" stroke="#00d4c8" stroke-width="2.5" stroke-linecap="round"/>
-      <!-- Point t=0 -->
       <circle cx="50" cy="38" r="4" fill="#00d4c8"/>
     </svg>
     <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; font-family:'IBM Plex Mono',monospace; text-align:center;">
@@ -1173,14 +861,11 @@ footer {
       • Toujours convertir t et t½ dans la même unité avant de calculer
     </div>
   </div>
-
 </section>
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     CHAPITRE 5 – APPLICATIONS ET DANGERS
-     ========================================================= -->
+<!-- CHAPITRE 5 -->
 <section id="applications" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 05</span>
@@ -1202,30 +887,10 @@ footer {
       <tr><th>Isotope</th><th>Demi-vie</th><th>Domaine d'application</th><th>Principe</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><strong>¹⁴C</strong> (Carbone 14)</td>
-        <td>5 730 ans</td>
-        <td>Archéologie (jusqu'à ~50 000 ans)</td>
-        <td>¹⁴C produit en continu dans l'atmosphère par les rayons cosmiques. Incorporé par les êtres vivants. Décroît après la mort.</td>
-      </tr>
-      <tr>
-        <td><strong>⁴⁰K</strong> (Potassium 40)</td>
-        <td>1,26 × 10⁹ ans</td>
-        <td>Géologie, roches (millions d'années)</td>
-        <td>⁴⁰K → ⁴⁰Ar. On mesure le rapport K/Ar dans la roche solidifiée.</td>
-      </tr>
-      <tr>
-        <td><strong>²³⁸U</strong> (Uranium 238)</td>
-        <td>4,47 × 10⁹ ans</td>
-        <td>Géochronologie (milliards d'années)</td>
-        <td>²³⁸U → ²⁰⁶Pb (série de désintégrations). Âge de la Terre, météorites.</td>
-      </tr>
-      <tr>
-        <td><strong>²³²Th</strong> (Thorium)</td>
-        <td>1,4 × 10¹⁰ ans</td>
-        <td>Cosmologie (âge univers)</td>
-        <td>Utilisé pour les roches très anciennes.</td>
-      </tr>
+      <tr><td><strong>¹⁴C</strong> (Carbone 14)</td><td>5 730 ans</td><td>Archéologie (jusqu'à ~50 000 ans)</td><td>¹⁴C produit en continu dans l'atmosphère par les rayons cosmiques. Incorporé par les êtres vivants. Décroît après la mort.</td></tr>
+      <tr><td><strong>⁴⁰K</strong> (Potassium 40)</td><td>1,26 × 10⁹ ans</td><td>Géologie, roches (millions d'années)</td><td>⁴⁰K → ⁴⁰Ar. On mesure le rapport K/Ar dans la roche solidifiée.</td></tr>
+      <tr><td><strong>²³⁸U</strong> (Uranium 238)</td><td>4,47 × 10⁹ ans</td><td>Géochronologie (milliards d'années)</td><td>²³⁸U → ²⁰⁶Pb (série de désintégrations). Âge de la Terre, météorites.</td></tr>
+      <tr><td><strong>²³²Th</strong> (Thorium)</td><td>1,4 × 10¹⁰ ans</td><td>Cosmologie (âge univers)</td><td>Utilisé pour les roches très anciennes.</td></tr>
     </tbody>
   </table>
 
@@ -1295,21 +960,18 @@ footer {
       <li><strong>γ</strong> : faiblement ionisant, très pénétrant. Irradiation externe importante</li>
     </ul>
   </div>
-
 </section>
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     CHAPITRE 6 – EXERCICES BAC CORRIGÉS
-     ========================================================= -->
+<!-- CHAPITRE 6 — EXERCICES -->
 <section id="exercices" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">Chapitre 06</span>
     <h2>Exercices Types Bac — Corrigés</h2>
   </div>
 
-  <!-- ===== EXO 1 ===== -->
+  <!-- EXO 1 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-bac">Type Bac</span>
@@ -1317,73 +979,21 @@ footer {
     </div>
     <div class="exo-body">
       <p>Le radium 226 (<sup>226</sup><sub>88</sub>Ra) est un émetteur α d'activité initiale A₀ = 3,70 × 10¹⁰ Bq pour un échantillon de 1,00 g. La demi-vie du radon (produit) n'est pas considérée ici.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Écrire l'équation de désintégration du radium 226. Identifier les particules et vérifier les lois de Soddy.</p>
-      </div>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Calculer le nombre de noyaux N₀ dans 1,00 g de ²²⁶Ra. On donne : Nₐ = 6,02 × 10²³ mol⁻¹.</p>
-      </div>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>En déduire la constante radioactive λ du radium 226, puis calculer sa demi-vie t½ en années. (1 an ≈ 3,156 × 10⁷ s)</p>
-      </div>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 4</div>
-        <p>Après combien de périodes les 3/4 des noyaux se sont-ils désintégrés ? Calculer la durée correspondante.</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Écrire l'équation de désintégration du radium 226. Identifier les particules et vérifier les lois de Soddy.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Calculer le nombre de noyaux N₀ dans 1,00 g de ²²⁶Ra. On donne : Nₐ = 6,02 × 10²³ mol⁻¹.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>En déduire la constante radioactive λ du radium 226, puis calculer sa demi-vie t½ en années. (1 an ≈ 3,156 × 10⁷ s)</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 4</div><p>Après combien de périodes les 3/4 des noyaux se sont-ils désintégrés ? Calculer la durée correspondante.</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Équation de désintégration α :</strong><br>
-            <code class="formula-main">²²⁶₈₈Ra  →  ²²²₈₆Rn  +  ⁴₂He</code>
-            Vérification : A = 226 = 222 + 4 ✓ &nbsp; Z = 88 = 86 + 2 ✓<br>
-            Le produit est le <strong>Radon 222</strong>, un gaz noble radioactif.
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <strong>Nombre de noyaux N₀ :</strong><br>
-            M(²²⁶Ra) = 226 g/mol<br>
-            <code class="formula-main">N₀ = (m/M) × Nₐ = (1,00/226) × 6,02×10²³ = <strong>2,66 × 10²¹ noyaux</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <strong>Constante radioactive λ :</strong><br>
-            A₀ = λ·N₀ donc λ = A₀/N₀<br>
-            <code class="formula-main">λ = (3,70×10¹⁰) / (2,66×10²¹) = <strong>1,39 × 10⁻¹¹ s⁻¹</strong></code>
-            <strong>Demi-vie :</strong><br>
-            <code class="formula-main">t½ = ln(2)/λ = 0,693 / (1,39×10⁻¹¹) ≈ 4,99×10¹⁰ s ÷ 3,156×10⁷ ≈ <strong>1 580 ans</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <strong>Les 3/4 désintégrés → 1/4 restant :</strong><br>
-            N(t)/N₀ = 1/4 = (1/2)² → il faut <strong>n = 2 périodes</strong><br>
-            <code class="formula-main">t = 2 × t½ = 2 × 1 580 = <strong>3 160 ans</strong></code>
-            <div class="alert alert-tip" style="margin-top:10px;">
-              <span class="alert-icon">💡</span>
-              <div>Généralisation : si la fraction restante est (1/2)ⁿ, alors t = n × t½. Sinon, utiliser la formule t = −(1/λ)·ln(fraction restante).</div>
-            </div>
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><strong>Équation de désintégration α :</strong><br><code class="formula-main">²²⁶₈₈Ra  →  ²²²₈₆Rn  +  ⁴₂He</code>Vérification : A = 226 = 222 + 4 ✓ &nbsp; Z = 88 = 86 + 2 ✓<br>Le produit est le <strong>Radon 222</strong>, un gaz noble radioactif.</div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content"><strong>Nombre de noyaux N₀ :</strong><br>M(²²⁶Ra) = 226 g/mol<br><code class="formula-main">N₀ = (m/M) × Nₐ = (1,00/226) × 6,02×10²³ = <strong>2,66 × 10²¹ noyaux</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content"><strong>Constante radioactive λ :</strong><br>A₀ = λ·N₀ donc λ = A₀/N₀<br><code class="formula-main">λ = (3,70×10¹⁰) / (2,66×10²¹) = <strong>1,39 × 10⁻¹¹ s⁻¹</strong></code><strong>Demi-vie :</strong><br><code class="formula-main">t½ = ln(2)/λ = 0,693 / (1,39×10⁻¹¹) ≈ 4,99×10¹⁰ s ÷ 3,156×10⁷ ≈ <strong>1 580 ans</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">4</div><div class="step-content"><strong>Les 3/4 désintégrés → 1/4 restant :</strong><br>N(t)/N₀ = 1/4 = (1/2)² → il faut <strong>n = 2 périodes</strong><br><code class="formula-main">t = 2 × t½ = 2 × 1 580 = <strong>3 160 ans</strong></code><div class="alert alert-tip" style="margin-top:10px;"><span class="alert-icon">💡</span><div>Généralisation : si la fraction restante est (1/2)ⁿ, alors t = n × t½. Sinon, utiliser la formule t = −(1/λ)·ln(fraction restante).</div></div></div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 2 ===== -->
+  <!-- EXO 2 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-bac">Type Bac</span>
@@ -1392,55 +1002,19 @@ footer {
     <div class="exo-body">
       <p>Une roche lunaire contient du potassium 40 (⁴⁰K) et de l'argon 40 (⁴⁰Ar). On admet qu'à la solidification de la roche, tout l'argon formé était libéré et la roche ne contenait donc que du ⁴⁰K. La désintégration β⁺ du potassium en argon est ici considérée.</p>
       <p>Données : t½(⁴⁰K) = 1,26 × 10⁹ ans. Mesures : N_K = 2,4 × 10¹⁶ noyaux, N_Ar = 2,3 × 10¹⁷ noyaux.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Écrire l'équation de désintégration du ⁴⁰K par β⁺.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Exprimer N₀ (nombre initial de noyaux de ⁴⁰K lors de la solidification) en fonction des données actuelles.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>Calculer l'âge t de la roche lunaire.</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Écrire l'équation de désintégration du ⁴⁰K par β⁺.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Exprimer N₀ (nombre initial de noyaux de ⁴⁰K lors de la solidification) en fonction des données actuelles.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>Calculer l'âge t de la roche lunaire.</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Désintégration β⁺ :</strong><br>
-            <code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₁₈Ar  +  ⁰₊₁e⁺</code>
-            Vérification : A = 40 = 40 + 0 ✓ &nbsp; Z = 19 = 18 + 1 ✓
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <strong>Conservation de la matière :</strong><br>
-            Tous les noyaux d'argon actuels proviennent des désintégrations de ⁴⁰K. Donc :<br>
-            <code class="formula-main">N₀ = N_K(t) + N_Ar(t) = 2,4×10¹⁶ + 2,3×10¹⁷ = <strong>2,54 × 10¹⁷ noyaux</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <strong>Calcul de l'âge :</strong><br>
-            N(t) = N₀·e^{−λt} donc N_K/N₀ = e^{−λt}<br>
-            λ = ln(2)/t½ = 0,693 / (1,26×10⁹) = 5,50×10⁻¹⁰ an⁻¹<br>
-            <code class="formula-main">t = −(1/λ)·ln(N_K/N₀) = −(1/5,50×10⁻¹⁰)·ln(2,4×10¹⁶ / 2,54×10¹⁷)</code>
-            <code class="formula-main">t = −(1/5,50×10⁻¹⁰)·ln(0,09449) = −(1/5,50×10⁻¹⁰)×(−2,359)</code>
-            <code class="formula-main"><strong>t ≈ 4,29 × 10⁹ ans  ≈  4,3 milliards d'années</strong></code>
-            → Cohérent avec l'âge connu de la Lune (~4,5 milliards d'années).
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><strong>Désintégration β⁺ :</strong><br><code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₁₈Ar  +  ⁰₊₁e⁺</code>Vérification : A = 40 = 40 + 0 ✓ &nbsp; Z = 19 = 18 + 1 ✓</div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content"><strong>Conservation de la matière :</strong><br>Tous les noyaux d'argon actuels proviennent des désintégrations de ⁴⁰K. Donc :<br><code class="formula-main">N₀ = N_K(t) + N_Ar(t) = 2,4×10¹⁶ + 2,3×10¹⁷ = <strong>2,54 × 10¹⁷ noyaux</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content"><strong>Calcul de l'âge :</strong><br>N(t) = N₀·e^{−λt} donc N_K/N₀ = e^{−λt}<br>λ = ln(2)/t½ = 0,693 / (1,26×10⁹) = 5,50×10⁻¹⁰ an⁻¹<br><code class="formula-main">t = −(1/λ)·ln(N_K/N₀) = −(1/5,50×10⁻¹⁰)·ln(2,4×10¹⁶ / 2,54×10¹⁷)</code><code class="formula-main">t = −(1/5,50×10⁻¹⁰)·ln(0,09449) = −(1/5,50×10⁻¹⁰)×(−2,359)</code><code class="formula-main"><strong>t ≈ 4,29 × 10⁹ ans  ≈  4,3 milliards d'années</strong></code>→ Cohérent avec l'âge connu de la Lune (~4,5 milliards d'années).</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 3 ===== -->
+  <!-- EXO 3 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-bac">Type Bac</span>
@@ -1448,61 +1022,21 @@ footer {
     </div>
     <div class="exo-body">
       <p>Le thallium 201 (<sup>201</sup>Tl) est utilisé en cardiologie. Données : λ(²⁰¹Tl) = 2,6 × 10⁻⁶ s⁻¹, A₀ = 78 MBq, activité volumique de la solution = 37 MBq/mL, M(Tl) = 201 g/mol, Nₐ = 6,02 × 10²³ mol⁻¹.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Calculer la demi-vie t½ du ²⁰¹Tl en heures.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Calculer le volume V de solution injecté au patient.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>Calculer la masse m₀ de ²⁰¹Tl injectée. La dose est-elle dangereuse sachant que la dose toxique est de 1,05 g ?</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 4</div>
-        <p>La décision de réinjection est prise quand A < 3 MBq. Calculer la durée entre deux injections.</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Calculer la demi-vie t½ du ²⁰¹Tl en heures.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Calculer le volume V de solution injecté au patient.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>Calculer la masse m₀ de ²⁰¹Tl injectée. La dose est-elle dangereuse sachant que la dose toxique est de 1,05 g ?</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 4</div><p>La décision de réinjection est prise quand A &lt; 3 MBq. Calculer la durée entre deux injections.</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <code class="formula-main">t½ = ln(2)/λ = 0,693 / (2,6×10⁻⁶) = 2,66×10⁵ s = 73,9 h ≈ <strong>74 heures</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            Activité volumique = activité / volume donc :<br>
-            <code class="formula-main">V = A₀ / (activité volumique) = 78 MBq / 37 MBq·mL⁻¹ ≈ <strong>2,1 mL</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            N₀ = A₀/λ = (78×10⁶) / (2,6×10⁻⁶) = 3,0×10¹³ noyaux<br>
-            <code class="formula-main">m₀ = (N₀ × M) / Nₐ = (3,0×10¹³ × 201) / (6,02×10²³) ≈ <strong>10⁻⁸ g = 10 ng</strong></code>
-            → 10 nanogrammes ≪ 1,05 g : <strong>dose sans danger</strong> (facteur 10⁸ de sécurité).
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            A(t) = A₀·e^{−λt} &lt; 3 MBq<br>
-            e^{−λt} &lt; 3/78 = 0,03846<br>
-            −λt &lt; ln(0,03846) = −3,258<br>
-            <code class="formula-main">t &gt; 3,258/λ = 3,258 / (2,6×10⁻⁶) = 1,253×10⁶ s ÷ 3600 ≈ <strong>348 h ≈ 14,5 jours</strong></code>
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><code class="formula-main">t½ = ln(2)/λ = 0,693 / (2,6×10⁻⁶) = 2,66×10⁵ s = 73,9 h ≈ <strong>74 heures</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content">Activité volumique = activité / volume donc :<br><code class="formula-main">V = A₀ / (activité volumique) = 78 MBq / 37 MBq·mL⁻¹ ≈ <strong>2,1 mL</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content">N₀ = A₀/λ = (78×10⁶) / (2,6×10⁻⁶) = 3,0×10¹³ noyaux<br><code class="formula-main">m₀ = (N₀ × M) / Nₐ = (3,0×10¹³ × 201) / (6,02×10²³) ≈ <strong>10⁻⁸ g = 10 ng</strong></code>→ 10 nanogrammes ≪ 1,05 g : <strong>dose sans danger</strong> (facteur 10⁸ de sécurité).</div></div>
+        <div class="solution-step"><div class="step-num">4</div><div class="step-content">A(t) = A₀·e^{−λt} &lt; 3 MBq<br>e^{−λt} &lt; 3/78 = 0,03846<br>−λt &lt; ln(0,03846) = −3,258<br><code class="formula-main">t &gt; 3,258/λ = 3,258 / (2,6×10⁻⁶) = 1,253×10⁶ s ÷ 3600 ≈ <strong>348 h ≈ 14,5 jours</strong></code></div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 4 ===== -->
+  <!-- EXO 4 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-bac">Type Bac</span>
@@ -1510,78 +1044,23 @@ footer {
     </div>
     <div class="exo-body">
       <p>L'autunite est un minéral phosphaté uranifère. Un échantillon de 100 g présente une activité A₀ = 9 000 Bq. t½(²³⁸U) = 4,47 × 10⁹ ans. M(²³⁸U) = 238 g/mol.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Les isotopes ²³⁵U et ²³⁸U sont-ils des isotopes ? Justifier. Donner leur composition.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Écrire l'équation de désintégration α de l'²³⁸U. Identifier le produit.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>Calculer la constante λ de l'²³⁸U (en s⁻¹ et en an⁻¹). En déduire N₀ puis la proportion de l'échantillon qui est radioactif.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 4</div>
-        <p>Montrer que l'activité est quasi-constante à l'échelle humaine (comparer t = 1000 ans à t½).</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 5</div>
-        <p>L'uranium est présent en poudre dans ce minéral. Quel type de radioactivité est le plus dangereux dans ce contexte ? Quels sont les effets à long terme ?</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Les isotopes ²³⁵U et ²³⁸U sont-ils des isotopes ? Justifier. Donner leur composition.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Écrire l'équation de désintégration α de l'²³⁸U. Identifier le produit.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>Calculer la constante λ de l'²³⁸U (en s⁻¹ et en an⁻¹). En déduire N₀ puis la proportion de l'échantillon qui est radioactif.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 4</div><p>Montrer que l'activité est quasi-constante à l'échelle humaine (comparer t = 1000 ans à t½).</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 5</div><p>L'uranium est présent en poudre dans ce minéral. Quel type de radioactivité est le plus dangereux dans ce contexte ? Quels sont les effets à long terme ?</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Oui, ce sont des isotopes :</strong> même Z = 92 (uranium), A différents (235 et 238).<br>
-            ²³⁵U : Z = 92 protons, N = 235 − 92 = <strong>143 neutrons</strong><br>
-            ²³⁸U : Z = 92 protons, N = 238 − 92 = <strong>146 neutrons</strong>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <code class="formula-main">²³⁸₉₂U  →  ²³⁴₉₀Th  +  ⁴₂He</code>
-            Le produit est le <strong>Thorium 234</strong> (lui-même radioactif β⁻).
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            λ = ln(2)/t½ = 0,693 / (4,47×10⁹ × 3,156×10⁷) = <strong>4,91 × 10⁻¹⁸ s⁻¹</strong><br>
-            λ = 0,693 / (4,47×10⁹) = <strong>1,55 × 10⁻¹⁰ an⁻¹</strong><br>
-            N₀ = A₀/λ = 9000 / (4,91×10⁻¹⁸) ≈ <strong>1,83 × 10²¹ noyaux</strong><br>
-            Masse correspondante : m_U = N₀·M/Nₐ = 1,83×10²¹×238/6,02×10²³ ≈ <strong>0,72 g</strong> sur 100 g → proportion faible (~0,72 %)
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            t = 1000 ans &nbsp; vs &nbsp; t½ = 4,47 × 10⁹ ans<br>
-            Rapport : t/t½ = 1000 / (4,47×10⁹) ≈ 2,2 × 10⁻⁷ ≪ 1<br>
-            <code class="formula-main">A(1000 ans)/A₀ = e^{−λ×1000} = e^{−1,55×10⁻⁷} ≈ 1 − 1,55×10⁻⁷ ≈ 1</code>
-            L'activité est <strong>pratiquement inchangée</strong> à l'échelle humaine : l'uranium 238 est quasi-permanent.
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            En poudre, le danger principal est l'<strong>inhalation de particules α</strong> émises par ²³⁸U en source interne. La particule α est très fortement ionisante dans les tissus pulmonaires.<br><br>
-            <strong>Effets :</strong><br>
-            • Court terme : brûlures des muqueuses respiratoires<br>
-            • Moyen terme : cancers pulmonaires (irradiation locale intense)<br>
-            • Long terme : mutations génétiques, risque transmissible
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><strong>Oui, ce sont des isotopes :</strong> même Z = 92 (uranium), A différents (235 et 238).<br>²³⁵U : Z = 92 protons, N = 235 − 92 = <strong>143 neutrons</strong><br>²³⁸U : Z = 92 protons, N = 238 − 92 = <strong>146 neutrons</strong></div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content"><code class="formula-main">²³⁸₉₂U  →  ²³⁴₉₀Th  +  ⁴₂He</code>Le produit est le <strong>Thorium 234</strong> (lui-même radioactif β⁻).</div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content">λ = ln(2)/t½ = 0,693 / (4,47×10⁹ × 3,156×10⁷) = <strong>4,91 × 10⁻¹⁸ s⁻¹</strong><br>λ = 0,693 / (4,47×10⁹) = <strong>1,55 × 10⁻¹⁰ an⁻¹</strong><br>N₀ = A₀/λ = 9000 / (4,91×10⁻¹⁸) ≈ <strong>1,83 × 10²¹ noyaux</strong><br>Masse correspondante : m_U = N₀·M/Nₐ = 1,83×10²¹×238/6,02×10²³ ≈ <strong>0,72 g</strong> sur 100 g → proportion faible (~0,72 %)</div></div>
+        <div class="solution-step"><div class="step-num">4</div><div class="step-content">t = 1000 ans &nbsp; vs &nbsp; t½ = 4,47 × 10⁹ ans<br>Rapport : t/t½ = 1000 / (4,47×10⁹) ≈ 2,2 × 10⁻⁷ ≪ 1<br><code class="formula-main">A(1000 ans)/A₀ = e^{−λ×1000} = e^{−1,55×10⁻⁷} ≈ 1 − 1,55×10⁻⁷ ≈ 1</code>L'activité est <strong>pratiquement inchangée</strong> à l'échelle humaine : l'uranium 238 est quasi-permanent.</div></div>
+        <div class="solution-step"><div class="step-num">5</div><div class="step-content">En poudre, le danger principal est l'<strong>inhalation de particules α</strong> émises par ²³⁸U en source interne. La particule α est très fortement ionisante dans les tissus pulmonaires.<br><br><strong>Effets :</strong><br>• Court terme : brûlures des muqueuses respiratoires<br>• Moyen terme : cancers pulmonaires (irradiation locale intense)<br>• Long terme : mutations génétiques, risque transmissible</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 5 ===== -->
+  <!-- EXO 5 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-entrainement">Entraînement</span>
@@ -1589,63 +1068,21 @@ footer {
     </div>
     <div class="exo-body">
       <p>Compléter les équations nucléaires suivantes en déterminant le noyau inconnu <sup>a</sup><sub>z</sub>X, puis identifier l'élément (utiliser le tableau périodique).</p>
-
-      <div class="question-block">
-        <div class="question-num">ÉQUATION 1 — Radioactivité α</div>
-        <code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">²¹⁰₈₄Po  →  ᵃ꜀X  +  ⁴₂He</code>
-      </div>
-      <div class="question-block">
-        <div class="question-num">ÉQUATION 2 — Radioactivité β⁻</div>
-        <code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">⁹⁰₃₈Sr  →  ᵃ꜀X  +  ⁰₋₁e⁻</code>
-      </div>
-      <div class="question-block">
-        <div class="question-num">ÉQUATION 3 — Radioactivité β⁺</div>
-        <code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">¹¹₆C  →  ᵃ꜀X  +  ⁰₊₁e⁺</code>
-      </div>
-      <div class="question-block">
-        <div class="question-num">ÉQUATION 4 — Identifier le type</div>
-        <code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">²³⁴₉₀Th  →  ²³⁴₉₁Pa  +  ᵃ꜀X</code>
-      </div>
-
+      <div class="question-block"><div class="question-num">ÉQUATION 1 — Radioactivité α</div><code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">²¹⁰₈₄Po  →  ᵃ꜀X  +  ⁴₂He</code></div>
+      <div class="question-block"><div class="question-num">ÉQUATION 2 — Radioactivité β⁻</div><code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">⁹⁰₃₈Sr  →  ᵃ꜀X  +  ⁰₋₁e⁻</code></div>
+      <div class="question-block"><div class="question-num">ÉQUATION 3 — Radioactivité β⁺</div><code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">¹¹₆C  →  ᵃ꜀X  +  ⁰₊₁e⁺</code></div>
+      <div class="question-block"><div class="question-num">ÉQUATION 4 — Identifier le type</div><code style="font-family:'IBM Plex Mono',monospace; font-size:0.95rem;">²³⁴₉₀Th  →  ²³⁴₉₁Pa  +  ᵃ꜀X</code></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            a = 210 − 4 = <strong>206</strong> &nbsp; z = 84 − 2 = <strong>82</strong><br>
-            Z = 82 → <strong>Plomb (Pb)</strong><br>
-            <code class="formula-main">²¹⁰₈₄Po  →  ²⁰⁶₈₂Pb  +  ⁴₂He</code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            a = 90 − 0 = <strong>90</strong> &nbsp; z = 38 − (−1) = <strong>39</strong><br>
-            Z = 39 → <strong>Yttrium (Y)</strong><br>
-            <code class="formula-main">⁹⁰₃₈Sr  →  ⁹⁰₃₉Y  +  ⁰₋₁e⁻</code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            a = 11 − 0 = <strong>11</strong> &nbsp; z = 6 − 1 = <strong>5</strong><br>
-            Z = 5 → <strong>Bore (B)</strong><br>
-            <code class="formula-main">¹¹₆C  →  ¹¹₅B  +  ⁰₊₁e⁺</code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            a = 234 − 234 = <strong>0</strong> &nbsp; z = 90 − 91 = <strong>−1</strong><br>
-            Particule de charge −1 et masse nulle → <strong>électron ⁰₋₁e⁻</strong> → <strong>radioactivité β⁻</strong><br>
-            <code class="formula-main">²³⁴₉₀Th  →  ²³⁴₉₁Pa  +  ⁰₋₁e⁻</code>
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content">a = 210 − 4 = <strong>206</strong> &nbsp; z = 84 − 2 = <strong>82</strong><br>Z = 82 → <strong>Plomb (Pb)</strong><br><code class="formula-main">²¹⁰₈₄Po  →  ²⁰⁶₈₂Pb  +  ⁴₂He</code></div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content">a = 90 − 0 = <strong>90</strong> &nbsp; z = 38 − (−1) = <strong>39</strong><br>Z = 39 → <strong>Yttrium (Y)</strong><br><code class="formula-main">⁹⁰₃₈Sr  →  ⁹⁰₃₉Y  +  ⁰₋₁e⁻</code></div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content">a = 11 − 0 = <strong>11</strong> &nbsp; z = 6 − 1 = <strong>5</strong><br>Z = 5 → <strong>Bore (B)</strong><br><code class="formula-main">¹¹₆C  →  ¹¹₅B  +  ⁰₊₁e⁺</code></div></div>
+        <div class="solution-step"><div class="step-num">4</div><div class="step-content">a = 234 − 234 = <strong>0</strong> &nbsp; z = 90 − 91 = <strong>−1</strong><br>Particule de charge −1 et masse nulle → <strong>électron ⁰₋₁e⁻</strong> → <strong>radioactivité β⁻</strong><br><code class="formula-main">²³⁴₉₀Th  →  ²³⁴₉₁Pa  +  ⁰₋₁e⁻</code></div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 6 ===== -->
+  <!-- EXO 6 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-difficile">★ Difficile</span>
@@ -1653,52 +1090,19 @@ footer {
     </div>
     <div class="exo-body">
       <p>Un os découvert lors de fouilles présente une activité massique de 3,2 × 10⁻¹² Bq/g de carbone. L'activité massique d'un être vivant est 2,27 × 10⁻¹⁰ Bq/g de carbone. t½(¹⁴C) = 5 730 ans.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Rappeler l'équation de désintégration du carbone 14. Pourquoi l'activité d'un être vivant est-elle constante ?</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Calculer λ(¹⁴C) puis l'âge de l'os.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>Cette méthode serait-elle applicable pour dater une roche de 500 000 ans ? Justifier.</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Rappeler l'équation de désintégration du carbone 14. Pourquoi l'activité d'un être vivant est-elle constante ?</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Calculer λ(¹⁴C) puis l'âge de l'os.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>Cette méthode serait-elle applicable pour dater une roche de 500 000 ans ? Justifier.</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <code class="formula-main">¹⁴₆C  →  ¹⁴₇N  +  ⁰₋₁e⁻</code>
-            (radioactivité β⁻)<br><br>
-            Un être vivant est en <strong>équilibre dynamique</strong> avec l'atmosphère : le ¹⁴C ingéré via la nourriture compense exactement le ¹⁴C qui se désintègre → activité massique constante. Après la mort, l'échange cesse et l'activité décroît.
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            λ = ln(2)/5730 = <strong>1,210 × 10⁻⁴ an⁻¹</strong><br>
-            A(t)/A₀ = 3,2×10⁻¹² / 2,27×10⁻¹⁰ = 0,01410<br>
-            <code class="formula-main">t = −(1/λ)·ln(A(t)/A₀) = −(1/1,210×10⁻⁴)·ln(0,01410)</code>
-            <code class="formula-main">t = −(8264)·(−4,261) = <strong>≈ 35 200 ans</strong></code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            Règle : durée mesurable ≤ 10 × t½ = 10 × 5730 = <strong>57 300 ans</strong><br>
-            500 000 ans ≫ 57 300 ans → <strong>non applicable</strong> : il ne resterait pratiquement aucun atome de ¹⁴C (ratio ≈ 10⁻²⁶).<br>
-            Pour 500 000 ans, il faudrait utiliser <strong>⁴⁰K</strong> (t½ = 1,26 × 10⁹ ans) ou <strong>²³⁸U</strong>.
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><code class="formula-main">¹⁴₆C  →  ¹⁴₇N  +  ⁰₋₁e⁻</code>(radioactivité β⁻)<br><br>Un être vivant est en <strong>équilibre dynamique</strong> avec l'atmosphère : le ¹⁴C ingéré via la nourriture compense exactement le ¹⁴C qui se désintègre → activité massique constante. Après la mort, l'échange cesse et l'activité décroît.</div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content">λ = ln(2)/5730 = <strong>1,210 × 10⁻⁴ an⁻¹</strong><br>A(t)/A₀ = 3,2×10⁻¹² / 2,27×10⁻¹⁰ = 0,01410<br><code class="formula-main">t = −(1/λ)·ln(A(t)/A₀) = −(1/1,210×10⁻⁴)·ln(0,01410)</code><code class="formula-main">t = −(8264)·(−4,261) = <strong>≈ 35 200 ans</strong></code></div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content">Règle : durée mesurable ≤ 10 × t½ = 10 × 5730 = <strong>57 300 ans</strong><br>500 000 ans ≫ 57 300 ans → <strong>non applicable</strong> : il ne resterait pratiquement aucun atome de ¹⁴C (ratio ≈ 10⁻²⁶).<br>Pour 500 000 ans, il faudrait utiliser <strong>⁴⁰K</strong> (t½ = 1,26 × 10⁹ ans) ou <strong>²³⁸U</strong>.</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 7 ===== -->
+  <!-- EXO 7 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-bac">Type Bac</span>
@@ -1706,53 +1110,19 @@ footer {
     </div>
     <div class="exo-body">
       <p>Le potassium 40 contribue à la chaleur interne de la Terre. Il peut se désintégrer par deux voies : β⁻ (89 %) et capture électronique / β⁺ (11 %) donnant ⁴⁰Ar.</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Écrire les deux équations de désintégration du ⁴⁰K : voie β⁻ et voie β⁺.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>On dispose d'un graphique de N(t) en fonction de t. À quel instant la pente est-elle maximale en valeur absolue ? Justifier.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 3</div>
-        <p>Sachant que l'²³⁸U a t½ = 4,5 × 10⁹ ans, quelle fraction des noyaux initiaux d'²³⁸U reste-t-il après 9,0 × 10⁹ ans ?</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Écrire les deux équations de désintégration du ⁴⁰K : voie β⁻ et voie β⁺.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>On dispose d'un graphique de N(t) en fonction de t. À quel instant la pente est-elle maximale en valeur absolue ? Justifier.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 3</div><p>Sachant que l'²³⁸U a t½ = 4,5 × 10⁹ ans, quelle fraction des noyaux initiaux d'²³⁸U reste-t-il après 9,0 × 10⁹ ans ?</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Voie β⁻ (vers Calcium) :</strong><br>
-            <code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₂₀Ca  +  ⁰₋₁e⁻</code>
-            <strong>Voie β⁺ (vers Argon) :</strong><br>
-            <code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₁₈Ar  +  ⁰₊₁e⁺</code>
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            La pente de N(t) est dN/dt = −A(t) = −λN(t).<br>
-            Cette pente (en valeur absolue) est maximale quand N(t) est maximal, c'est-à-dire à <strong>t = 0</strong> (état initial).<br>
-            Physiquement : plus il y a de noyaux, plus il y a de désintégrations par seconde.
-          </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            t = 9,0 × 10⁹ ans = 2 × t½ (car 2 × 4,5 × 10⁹ = 9,0 × 10⁹)<br>
-            Après n = 2 demi-vies :<br>
-            <code class="formula-main">N(2t½) / N₀ = (1/2)² = <strong>1/4 = 25 %</strong></code>
-            Il reste 1/4 des noyaux initiaux → les 3/4 se sont désintégrés.
-          </div>
-        </div>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><strong>Voie β⁻ (vers Calcium) :</strong><br><code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₂₀Ca  +  ⁰₋₁e⁻</code><strong>Voie β⁺ (vers Argon) :</strong><br><code class="formula-main">⁴⁰₁₉K  →  ⁴⁰₁₈Ar  +  ⁰₊₁e⁺</code></div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content">La pente de N(t) est dN/dt = −A(t) = −λN(t).<br>Cette pente (en valeur absolue) est maximale quand N(t) est maximal, c'est-à-dire à <strong>t = 0</strong> (état initial).<br>Physiquement : plus il y a de noyaux, plus il y a de désintégrations par seconde.</div></div>
+        <div class="solution-step"><div class="step-num">3</div><div class="step-content">t = 9,0 × 10⁹ ans = 2 × t½ (car 2 × 4,5 × 10⁹ = 9,0 × 10⁹)<br>Après n = 2 demi-vies :<br><code class="formula-main">N(2t½) / N₀ = (1/2)² = <strong>1/4 = 25 %</strong></code>Il reste 1/4 des noyaux initiaux → les 3/4 se sont désintégrés.</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ===== EXO 8 ===== -->
+  <!-- EXO 8 -->
   <div class="exercise">
     <div class="exo-header">
       <span class="exo-badge badge-difficile">★ Difficile</span>
@@ -1760,66 +1130,22 @@ footer {
     </div>
     <div class="exo-body">
       <p>Un noyau inconnu X subit successivement : une désintégration α, puis une désintégration β⁻, puis une désintégration α. Le noyau final obtenu est le plomb 206 (<sup>206</sup><sub>82</sub>Pb).</p>
-
-      <div class="question-block">
-        <div class="question-num">QUESTION 1</div>
-        <p>Déterminer le noyau X (valeurs de A et Z) en remontant la chaîne.</p>
-      </div>
-      <div class="question-block">
-        <div class="question-num">QUESTION 2</div>
-        <p>Écrire la chaîne complète de désintégration en nommant tous les noyaux intermédiaires.</p>
-      </div>
-
+      <div class="question-block"><div class="question-num">QUESTION 1</div><p>Déterminer le noyau X (valeurs de A et Z) en remontant la chaîne.</p></div>
+      <div class="question-block"><div class="question-num">QUESTION 2</div><p>Écrire la chaîne complète de désintégration en nommant tous les noyaux intermédiaires.</p></div>
       <button class="solution-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Masquer la correction' : '▼ Afficher la correction'">▼ Afficher la correction</button>
       <div class="solution-block">
-        <div class="solution-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Raisonnement inverse — partir du produit final ²⁰⁶₈₂Pb :</strong><br><br>
-            <strong>Inverser la 3ᵉ désintégration (α) :</strong> avant ²⁰⁶₈₂Pb, ajouter ⁴₂He<br>
-            → A = 206 + 4 = 210 &nbsp; Z = 82 + 2 = 84 → noyau C = <strong>²¹⁰₈₄Po (Polonium 210)</strong><br><br>
-            <strong>Inverser la 2ᵉ désintégration (β⁻) :</strong> avant ²¹⁰₈₄Po, soustraire l'effet (Z−1, A constant)<br>
-            → A = 210 &nbsp; Z = 84 − 1 = 83 → noyau B = <strong>²¹⁰₈₃Bi (Bismuth 210)</strong><br><br>
-            <strong>Inverser la 1ʳᵉ désintégration (α) :</strong> avant ²¹⁰₈₃Bi, ajouter ⁴₂He<br>
-            → A = 210 + 4 = 214 &nbsp; Z = 83 + 2 = 85 → noyau X = <strong>²¹⁴₈₅At (Astate 214)</strong>
+        <div class="solution-step"><div class="step-num">1</div><div class="step-content"><strong>Raisonnement inverse — partir du produit final ²⁰⁶₈₂Pb :</strong><br><br><strong>Inverser la 3ᵉ désintégration (α) :</strong> avant ²⁰⁶₈₂Pb, ajouter ⁴₂He<br>→ A = 206 + 4 = 210 &nbsp; Z = 82 + 2 = 84 → noyau C = <strong>²¹⁰₈₄Po (Polonium 210)</strong><br><br><strong>Inverser la 2ᵉ désintégration (β⁻) :</strong> avant ²¹⁰₈₄Po, soustraire l'effet (Z−1, A constant)<br>→ A = 210 &nbsp; Z = 84 − 1 = 83 → noyau B = <strong>²¹⁰₈₃Bi (Bismuth 210)</strong><br><br><strong>Inverser la 1ʳᵉ désintégration (α) :</strong> avant ²¹⁰₈₃Bi, ajouter ⁴₂He<br>→ A = 210 + 4 = 214 &nbsp; Z = 83 + 2 = 85 → noyau X = <strong>²¹⁴₈₅At (Astate 214)</strong></div></div>
+        <div class="solution-step"><div class="step-num">2</div><div class="step-content"><strong>Chaîne complète :</strong>
+          <div class="chain">
+            <div class="chain-atom"><div class="cname">Astate</div><div class="csym">²¹⁴₈₅At</div></div>
+            <div class="chain-arrow"><span class="atype" style="color:var(--red);">α</span><span class="arr" style="color:var(--red);">→</span></div>
+            <div class="chain-atom"><div class="cname">Bismuth</div><div class="csym">²¹⁰₈₃Bi</div></div>
+            <div class="chain-arrow"><span class="atype" style="color:var(--blue);">β⁻</span><span class="arr" style="color:var(--blue);">→</span></div>
+            <div class="chain-atom"><div class="cname">Polonium</div><div class="csym">²¹⁰₈₄Po</div></div>
+            <div class="chain-arrow"><span class="atype" style="color:var(--red);">α</span><span class="arr" style="color:var(--red);">→</span></div>
+            <div class="chain-atom" style="border-color:var(--cyan);"><div class="cname">Plomb</div><div class="csym" style="color:var(--cyan);">²⁰⁶₈₂Pb</div></div>
           </div>
-        </div>
-        <div class="solution-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <strong>Chaîne complète :</strong>
-            <div class="chain">
-              <div class="chain-atom">
-                <div class="cname">Astate</div>
-                <div class="csym">²¹⁴₈₅At</div>
-              </div>
-              <div class="chain-arrow">
-                <span class="atype" style="color:var(--red);">α</span>
-                <span class="arr" style="color:var(--red);">→</span>
-              </div>
-              <div class="chain-atom">
-                <div class="cname">Bismuth</div>
-                <div class="csym">²¹⁰₈₃Bi</div>
-              </div>
-              <div class="chain-arrow">
-                <span class="atype" style="color:var(--blue);">β⁻</span>
-                <span class="arr" style="color:var(--blue);">→</span>
-              </div>
-              <div class="chain-atom">
-                <div class="cname">Polonium</div>
-                <div class="csym">²¹⁰₈₄Po</div>
-              </div>
-              <div class="chain-arrow">
-                <span class="atype" style="color:var(--red);">α</span>
-                <span class="arr" style="color:var(--red);">→</span>
-              </div>
-              <div class="chain-atom" style="border-color:var(--cyan);">
-                <div class="cname">Plomb</div>
-                <div class="csym" style="color:var(--cyan);">²⁰⁶₈₂Pb</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div></div>
       </div>
     </div>
   </div>
@@ -1828,9 +1154,7 @@ footer {
 
 <div class="section-divider"></div>
 
-<!-- =========================================================
-     BILAN GÉNÉRAL
-     ========================================================= -->
+<!-- BILAN -->
 <section id="bilan" class="chapter">
   <div class="chapter-header">
     <span class="chapter-num">📌 Bilan</span>
@@ -1840,90 +1164,28 @@ footer {
   <div class="bilan-box">
     <div class="bilan-title">🔑 Toutes les formules essentielles</div>
     <div class="bilan-grid">
-      <div class="bilan-item">
-        <strong>Notation noyau</strong>
-        ᴬ꜀X &nbsp; A = Z + N
-      </div>
-      <div class="bilan-item">
-        <strong>Lois de Soddy</strong>
-        ΣA conservé · ΣZ conservé
-      </div>
-      <div class="bilan-item">
-        <strong>Activité</strong>
-        A(t) = λN(t) = −dN/dt
-      </div>
-      <div class="bilan-item">
-        <strong>Décroissance N</strong>
-        N(t) = N₀ · e<sup>−λt</sup>
-      </div>
-      <div class="bilan-item">
-        <strong>Décroissance A</strong>
-        A(t) = A₀ · e<sup>−λt</sup>
-      </div>
-      <div class="bilan-item">
-        <strong>Demi-vie</strong>
-        t½ = ln2 / λ ≈ 0,693/λ
-      </div>
-      <div class="bilan-item">
-        <strong>Datation</strong>
-        t = −(1/λ)·ln(N/N₀)
-      </div>
-      <div class="bilan-item">
-        <strong>Masse ↔ noyaux</strong>
-        N = (m/M) × Nₐ
-      </div>
-      <div class="bilan-item">
-        <strong>n demi-vies</strong>
-        N(n·t½) = N₀/2ⁿ
-      </div>
-      <div class="bilan-item">
-        <strong>1 an en secondes</strong>
-        ≈ 3,156 × 10⁷ s
-      </div>
+      <div class="bilan-item"><strong>Notation noyau</strong>ᴬ꜀X &nbsp; A = Z + N</div>
+      <div class="bilan-item"><strong>Lois de Soddy</strong>ΣA conservé · ΣZ conservé</div>
+      <div class="bilan-item"><strong>Activité</strong>A(t) = λN(t) = −dN/dt</div>
+      <div class="bilan-item"><strong>Décroissance N</strong>N(t) = N₀ · e<sup>−λt</sup></div>
+      <div class="bilan-item"><strong>Décroissance A</strong>A(t) = A₀ · e<sup>−λt</sup></div>
+      <div class="bilan-item"><strong>Demi-vie</strong>t½ = ln2 / λ ≈ 0,693/λ</div>
+      <div class="bilan-item"><strong>Datation</strong>t = −(1/λ)·ln(N/N₀)</div>
+      <div class="bilan-item"><strong>Masse ↔ noyaux</strong>N = (m/M) × Nₐ</div>
+      <div class="bilan-item"><strong>n demi-vies</strong>N(n·t½) = N₀/2ⁿ</div>
+      <div class="bilan-item"><strong>1 an en secondes</strong>≈ 3,156 × 10⁷ s</div>
     </div>
   </div>
 
   <div class="bilan-box" style="border-color:rgba(245,158,11,0.35); background:linear-gradient(135deg,rgba(245,158,11,0.05),rgba(249,115,22,0.03));">
     <div class="bilan-title" style="color:var(--gold);">⚛️ Les 4 radioactivités en un coup d'œil</div>
     <table class="data-table">
-      <thead>
-        <tr>
-          <th>Type</th><th>Particule</th><th>ΔA</th><th>ΔZ</th><th>Quand ?</th><th>Mnémotechnique</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Type</th><th>Particule</th><th>ΔA</th><th>ΔZ</th><th>Quand ?</th><th>Mnémotechnique</th></tr></thead>
       <tbody>
-        <tr>
-          <td style="color:var(--red);font-weight:700;">α</td>
-          <td>⁴₂He</td>
-          <td style="color:var(--red);">−4</td>
-          <td style="color:var(--red);">−2</td>
-          <td>Noyau lourd (A>200)</td>
-          <td>"Alpha perd 4 et 2"</td>
-        </tr>
-        <tr>
-          <td style="color:var(--blue);font-weight:700;">β⁻</td>
-          <td>⁰₋₁e</td>
-          <td>0</td>
-          <td style="color:var(--green);">+1</td>
-          <td>Trop de neutrons</td>
-          <td>"β⁻ monte Z" (n→p)</td>
-        </tr>
-        <tr>
-          <td style="color:var(--green);font-weight:700;">β⁺</td>
-          <td>⁰₊₁e</td>
-          <td>0</td>
-          <td style="color:var(--red);">−1</td>
-          <td>Trop de protons</td>
-          <td>"β⁺ descend Z" (p→n)</td>
-        </tr>
-        <tr>
-          <td style="color:var(--purple);font-weight:700;">γ</td>
-          <td>Photon γ</td>
-          <td>0</td>
-          <td>0</td>
-          <td>Noyau excité</td>
-          <td>"γ : rien ne change"</td>
-        </tr>
+        <tr><td style="color:var(--red);font-weight:700;">α</td><td>⁴₂He</td><td style="color:var(--red);">−4</td><td style="color:var(--red);">−2</td><td>Noyau lourd (A>200)</td><td>"Alpha perd 4 et 2"</td></tr>
+        <tr><td style="color:var(--blue);font-weight:700;">β⁻</td><td>⁰₋₁e</td><td>0</td><td style="color:var(--green);">+1</td><td>Trop de neutrons</td><td>"β⁻ monte Z" (n→p)</td></tr>
+        <tr><td style="color:var(--green);font-weight:700;">β⁺</td><td>⁰₊₁e</td><td>0</td><td style="color:var(--red);">−1</td><td>Trop de protons</td><td>"β⁺ descend Z" (p→n)</td></tr>
+        <tr><td style="color:var(--purple);font-weight:700;">γ</td><td>Photon γ</td><td>0</td><td>0</td><td>Noyau excité</td><td>"γ : rien ne change"</td></tr>
       </tbody>
     </table>
   </div>
@@ -1957,18 +1219,15 @@ footer {
       </ol>
     </div>
   </div>
-
 </section>
 
 <footer>
   <p>Transformations nucléaires · Terminale Générale Spécialité Physique-Chimie · 2025/2026</p>
   <p style="margin-top:6px;">Cours complet · 8 exercices corrigés · Types bac · cours-de-sciences.fr</p>
 </footer>
-
 </div>
 
 <script>
-// Smooth reveal on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1985,15 +1244,11 @@ document.querySelectorAll('.chapter, .exercise, .card, .formula-box').forEach(el
   observer.observe(el);
 });
 
-// Active nav pill on scroll
 const sections = document.querySelectorAll('section[id]');
 const pills = document.querySelectorAll('.nav-pill');
-
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 120) current = s.id;
-  });
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
   pills.forEach(p => {
     p.style.borderColor = '';
     p.style.color = '';
